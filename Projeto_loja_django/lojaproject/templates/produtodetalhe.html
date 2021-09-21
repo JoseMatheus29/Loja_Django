@@ -1,0 +1,27 @@
+{%extends 'base.html' %}
+{%block title%}{{produto.titulo}}{%endblock%}
+
+
+{%block content %}
+<div class="container">
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col md6">
+                <img src="{{produto.image.url}}" width="380" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>{{produto.titulo}} {{produto.visualização}} visualizações</h3>
+                <h4>Categoria: {{produto.Categoria}}</h4>
+                <h5>Preço: <strike>R${{produto.preco_mercado}}</strike> R${{produto.venda}} </h5>
+                <a href="{%url 'lojaapp:addCarro' produto.id%}" class="btn btn-success">Comprar</a>
+                <p>{{produto.descricao}}</p>
+                <p class="text-danger" style="font-size: small;">Garantia: {{produto.garantia}}</p>
+                <p class="text-danger" style="font-size: small;">Politica de Devolução: {{produto.devolucao}}</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+{% endblock %}
