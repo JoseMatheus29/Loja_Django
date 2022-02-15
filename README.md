@@ -42,4 +42,4 @@
 
 
 
-<p>Feito por José Matheus✌ <a href = "https://www.linkedin.com/feed/">Veja meu Linkedin</a></p>
+<p>Feito por José Matheus✌ <a href = "https://www.linkedin.com/in/josé-matheus-de-lima-27706a1b6/">Veja meu Linkedin</a></p>
